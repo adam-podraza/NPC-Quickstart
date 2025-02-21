@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gave_Last_Fiscal_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+    LastGiftDate__c &lt; DATE(YEAR(TODAY()) - IF(MONTH(TODAY()) &gt;= 9, 0, 1), 9, 1),
+    LastGiftDate__c &gt; DATE(YEAR(TODAY()) - IF(MONTH(TODAY()) &gt;= 9, 1, 2), 8, 31)
+)</formula>
+    <label>Gave Last Fiscal Year</label>
+    <type>Checkbox</type>
+</CustomField>
