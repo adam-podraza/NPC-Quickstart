@@ -220,15 +220,18 @@
         <sources>Slice_Household_Soft_Credits</sources>
         <sources>Slice_All_Other_Gift_Soft_Credits</sources>
     </appends>
+    <dataSpaceApiName>default</dataSpaceApiName>
     <datasources>
         <fields>
             <alias>HouseholdId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>AccountId</name>
         </fields>
         <fields>
             <alias>PersonId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>ContactId</name>
         </fields>
         <label>AccountContactRelation</label>
@@ -240,11 +243,13 @@
         <fields>
             <alias>DonorId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>DonorId</name>
         </fields>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <label>Donor Gift Summary</label>
@@ -256,31 +261,37 @@
         <fields>
             <alias>PersonContactId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Donor.PersonContactId</name>
         </fields>
         <fields>
             <alias>ExpectedTotalCmtAmount</alias>
             <dataType>Numeric</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>ExpectedTotalCmtAmount</name>
         </fields>
         <fields>
             <alias>FormalCommitmentType</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>FormalCommitmentType</name>
         </fields>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <fields>
             <alias>ScheduleType</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>ScheduleType</name>
         </fields>
         <fields>
             <alias>Status</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Status</name>
         </fields>
         <label>Gift Commitment</label>
@@ -292,41 +303,49 @@
         <fields>
             <alias>CreatedDate</alias>
             <dataType>DateTime</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>CreatedDate</name>
         </fields>
         <fields>
             <alias>IsPaid</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftTransaction.IsPaid</name>
         </fields>
         <fields>
             <alias>TransactionDate</alias>
             <dataType>Date</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftTransaction.TransactionDate</name>
         </fields>
         <fields>
             <alias>GiftTransactionId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftTransactionId</name>
         </fields>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <fields>
             <alias>PersonContactId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Recipient.PersonContactId</name>
         </fields>
         <fields>
             <alias>RecipientId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>RecipientId</name>
         </fields>
         <fields>
             <alias>SoftCreditAmount</alias>
             <dataType>Numeric</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>SoftCreditAmount</name>
         </fields>
         <label>Gift Soft Credit</label>
@@ -338,41 +357,49 @@
         <fields>
             <alias>CampaignId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>CampaignId</name>
         </fields>
         <fields>
             <alias>CurrentAmount</alias>
             <dataType>Numeric</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>CurrentAmount</name>
         </fields>
         <fields>
             <alias>PersonContactId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Donor.PersonContactId</name>
         </fields>
         <fields>
             <alias>DonorId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>DonorId</name>
         </fields>
         <fields>
             <alias>GiftCommitmentId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftCommitmentId</name>
         </fields>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <fields>
             <alias>IsPaid</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>IsPaid</name>
         </fields>
         <fields>
             <alias>TransactionDate</alias>
             <dataType>Date</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>TransactionDate</name>
         </fields>
         <label>Gift Transaction</label>
@@ -384,11 +411,13 @@
         <fields>
             <alias>AccountId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>AccountId</name>
         </fields>
         <fields>
             <alias>Type</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Type</name>
         </fields>
         <label>PartyRelationshipGroup</label>
@@ -396,6 +425,7 @@
         <sourceName>PartyRelationshipGroup</sourceName>
         <type>StandardObject</type>
     </datasources>
+    <definitionRunMode>Batch</definitionRunMode>
     <description>Donor Gift Summary Rollup</description>
     <executionPlatformType>CRMA</executionPlatformType>
     <filters>
@@ -2841,6 +2871,7 @@
             <targetFieldName>TotalBookableRevenue</targetFieldName>
         </fields>
         <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
         <label>Insert Donor Gift Summaries</label>
         <name>Insert_Donor_Gift_Summaries</name>
         <operationType>Insert</operationType>
@@ -3027,6 +3058,7 @@
             <targetFieldName>TotalBookableRevenue</targetFieldName>
         </fields>
         <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
         <label>Update Donor Gift Summaries</label>
         <name>Update_Donor_Gift_Summaries</name>
         <operationType>Update</operationType>

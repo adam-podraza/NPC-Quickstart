@@ -89,20 +89,24 @@
         <name>Group_By_Designation_Last_Year</name>
         <sourceName>Filter_on_Last_Year</sourceName>
     </aggregates>
+    <dataSpaceApiName>default</dataSpaceApiName>
     <datasources>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <fields>
             <alias>IsPaid</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>IsPaid</name>
         </fields>
         <fields>
             <alias>TransactionDate</alias>
             <dataType>Date</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>TransactionDate</name>
         </fields>
         <label>Gift Transaction</label>
@@ -114,21 +118,25 @@
         <fields>
             <alias>Amount</alias>
             <dataType>Numeric</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Amount</name>
         </fields>
         <fields>
             <alias>GiftDesignationId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftDesignationId</name>
         </fields>
         <fields>
             <alias>GiftTransactionId</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>GiftTransactionId</name>
         </fields>
         <fields>
             <alias>Id</alias>
             <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
             <name>Id</name>
         </fields>
         <label>Gift Transaction Designation</label>
@@ -136,6 +144,7 @@
         <sourceName>GiftTransactionDesignation</sourceName>
         <type>StandardObject</type>
     </datasources>
+    <definitionRunMode>Batch</definitionRunMode>
     <description>Gift Designation Rollup</description>
     <executionPlatformType>CRMA</executionPlatformType>
     <filters>
@@ -538,6 +547,7 @@
             <targetFieldName>LastTwoYearTrxnCount</targetFieldName>
         </fields>
         <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
         <label>Update Gift Designation</label>
         <name>Update_Gift_Designation</name>
         <operationType>Update</operationType>

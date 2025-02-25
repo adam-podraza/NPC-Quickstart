@@ -63,10 +63,10 @@
         <label>Launch OS</label>
         <locationX>176</locationX>
         <locationY>468</locationY>
-        <actionName>OutreachSummary_CLONE</actionName>
+        <actionName>OutreachSummary_CLONE_V2</actionName>
         <actionType>dataProcessingEngineAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <nameSegment>OutreachSummary_CLONE</nameSegment>
+        <nameSegment>OutreachSummary_CLONE_V2</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <apiVersion>62.0</apiVersion>
