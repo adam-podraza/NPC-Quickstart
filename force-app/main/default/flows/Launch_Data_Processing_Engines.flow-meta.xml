@@ -40,7 +40,7 @@
         <inputParameters>
             <name>CURRENT_CALENDAR_YEAR</name>
             <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
+                <elementReference>ThisYear</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -74,12 +74,17 @@
     <formulas>
         <name>OneYearAgo</name>
         <dataType>Date</dataType>
-        <expression>DATE(YEAR({!$Flow.CurrentDate})-1, MONTH({!$Flow.CurrentDate}), DAY({!$Flow.CurrentDate}))</expression>
+        <expression>DATE(YEAR({!$Flow.CurrentDate})-1,1,1)</expression>
+    </formulas>
+    <formulas>
+        <name>ThisYear</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR({!$Flow.CurrentDate}),1,1)</expression>
     </formulas>
     <formulas>
         <name>TwoYearsAgo</name>
         <dataType>Date</dataType>
-        <expression>DATE(YEAR({!$Flow.CurrentDate})-2, MONTH({!$Flow.CurrentDate}), DAY({!$Flow.CurrentDate}))</expression>
+        <expression>DATE(YEAR({!$Flow.CurrentDate})-2, 1, 1)</expression>
     </formulas>
     <interviewLabel>Launch Data Processing Engines {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Launch Data Processing Engines</label>
